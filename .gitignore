@@ -1,1 +1,19 @@
+# generated data: reproducible from the seed, so don't commit it
+data/
+output/
 my_env/
+
+
+# python
+__pycache__/
+.venv/
+*.pyc
+
+# secrets and local config
+.env
+*.key
+
+# editor / OS
+.vscode/
+.DS_Store
+EOF

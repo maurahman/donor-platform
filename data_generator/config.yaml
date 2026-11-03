@@ -7,3 +7,13 @@ consent_email_rate: 0.70
 start_date: "2022-01-01"
 end_date: "2025-12-31"     # fixed, so output never depends on today's date
 output_dir: "data/raw"
+
+giving:
+  donor_rate: 0.60            # share of people who ever donate
+  regular_rate: 0.20          # share of donors giving monthly
+  bad_amount_rate: 0.005      # zero or negative amounts
+  future_date_rate: 0.003     # donation dated after end_date
+  orphan_rate: 0.004          # contact_id that does not exist
+  duplicate_row_rate: 0.003   # double-posted gift (new donation_id)
+  channel_case_mess_rate: 0.05
+  gift_aid_rate: 0.55
